@@ -1,0 +1,275 @@
+body{
+  margin: 0;
+  font-family: Impact;
+}
+section{
+  display: block;
+  margin: auto;
+  padding: 20px;
+  background-color: #e9ecef;
+}
+*{
+  margin:0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+/* Texts */
+h1{
+  font-size: 2em;
+  color:#3d5a80; 
+  text-align: center;
+}
+h2{
+  font-size: 1.5em;
+  color: #3d5a80;
+  padding: 10px;
+}
+h3{
+  font-size: 1.5em;
+  color: #3d5a80;
+  padding: 10px 30px;
+}
+h4{
+  font-size: 1em;
+  color:#3d5a80;
+  padding: 10px 30px;
+}
+p{
+  padding: 10px;
+  font-family: arial;
+  font-size: 16px;
+  color: #3d5a80;
+}
+/* navigation */
+nav{
+  height: 80px;
+  background-color: #3d5a80;
+}
+nav img{
+  width: 150px;
+  position: absolute;
+  top: 10px;
+  left: 6%;
+}
+nav ul{
+  float: right;
+  margin-right: 25px;
+}
+nav ul button{
+  border: none;
+  border-radius: 30px;
+  background-color: #edf6f9;
+  color: #3d5a80;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 10px;
+  padding: 12px 36px;
+}
+nav ul button:hover{
+  background-color: #98c1d9;
+  color: white;
+  cursor: pointer;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+}
+nav ul li a{
+  position: relative;
+  display: block;
+  color: white;
+  font-size: 18px;
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+nav ul li a:hover{
+  background-color: #edf6f9;
+  color: #3d5a80;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #3d5a80;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+/* Footer */
+.footer{
+  display: block;
+  width: 100%;
+}
+.footer-favicon{
+  width: 50px;
+  height: 56px;
+  float: left;
+  margin-right: 20px;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.footer-left{
+  float: left;
+}
+.footer-left-media{
+  float: left;
+}
+.footer-left-media li{
+  float: left;
+  border-right: 2px solid #3d5a80;
+  padding: 0 8px;
+}
+.footer-left-media li a{
+  color:#3d5a80;
+  font-size: 16px;
+  display: block;
+}
+.links{
+  overflow: hidden;
+  margin: 67px 0;
+}
+/* User input Login details */
+.footer-right{
+  float: right;
+  margin: 20px 80px;
+}
+.text{
+  padding: 10px;
+  font-size: 16px;
+  color: #3d5a80;
+}
+signupbtn{
+  background-color: #98c1d9;
+  border: none;
+  border-radius: 20px;
+  color: #3d5a80;
+  margin: 10px 0;
+  padding: 10px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* Box */
+.box{
+  margin: 30px;
+  padding: 20px;
+  border: 2px solid #3d5a80;
+  border-radius: 20px;
+}
+.newsbox{
+  display: inline-block;
+  overflow: hidden;
+  margin: 30px;
+  padding: 15px;
+  width: 26%;
+  border: 2px solid #3d5a80;
+  border-radius: 20px;
+}
+.projectbox{
+  display: inline-block;
+  margin: 30px;
+  padding: 20px;
+  width: 42%;
+  border: 2px solid #3d5a80;
+  border-radius: 20px;
+}
+.progressbar{
+  margin: 10px;
+}
+.learn{
+  padding: 10px;
+  color:#98c1d9;
+}
+.read{
+  padding: 10px;
+  color: #98c1d9;
+  text-decoration: underline;
+}
+.see{
+  font-size: 1.5em;
+  color: #98c1d9;
+  margin-left: 40px;
+}
+/* Mobile */
+@media (max-width: 858px){
+  .newsbox{
+    width: 250px;
+  }
+  .projectbox{
+    width: 260px;
+    margin: 10px;
+    padding: auto;
+  }
+}
+/* Donate buttons */
+.donatebtn{
+  margin: 30px;
+  padding: 16px 32px;
+  background-color: #e9ecef;
+  border: 2px solid #3d5a80;
+  color: #3d5a80;
+  border-radius: 16px;
+  display: inline-block;
+  font-family: impact;
+  font-size: 16px;
+  transition-duration: .4s;
+  cursor: pointer;
+}
+.donatebtn:hover{
+  background-color: #3d5a80;
+  color: #edf6f9;
+}
+.submit{
+  margin: 10px 30px;
+  padding: 16px 32px;
+  background-color: #3d5a80;
+  border: none;
+  color: #e9ecef;
+  border-radius: 16px;
+  display: block;
+  font-family: impact;
+  font-size: 16px;
+  transition-duration: .4s;
+  cursor: pointer;
+}
+.submit:hover{
+  background-color: #98c1d9;
+  color: #3d5a80;
+}
